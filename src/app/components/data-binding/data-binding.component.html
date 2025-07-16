@@ -5,3 +5,35 @@
 
 <input type="text" [(ngModel)]="input1" name="input1"/>{{input1}}<br>
 <input type="text" [value]="input2" /> {{input2}}
+
+<hr>
+
+<h3>Improve app performance</h3>
+<ul>
+    <li>Use change detection on push</li>
+    <li>lazy load feature modules</li>
+    <li>use trackBy in ngFor to avoid rerendering</li>
+    <li>Unsubscribe from observables</li>
+    <li>Avoid complex logic in templates</li>
+    <li>Using async pipe in templates, instead of subscribing manually</li>
+    <li>Enabling AOT ng build --aot</li>
+    <li>Use pure pipes</li>
+    <li>Optimize images and assets</li>
+</ul>
+
+<h3>Dependency Injection</h3>
+<p>DI is a design pattern in Angular to manage how components and services acquire dependencies. It is a technique in which an object gets its dependencies from an external source rather than creating them itself.</p>
+
+
+<hr>
+
+<h3>Change Detection</h3>
+<p> Is angular's way of keeping data model and view in sync. Whenever angular think the view might need an update it runs change detection cycle.</p>
+<p>The ChangeDetectionStrategy.OnPush setting is used to configure the change detection behavior for the component. With this strategy, change detection is triggered only when input properties change or when an event is emitted, improving the performance by reducing unnecessary checks and updates.</p>
+
+<hr>
+
+<h3>View Encapsulation</h3>
+<p>ViewEncapsulation is an Angular feature that allows you to control how styles are applied to a component's view.
+It determines whether styles defined in a component's CSS file are encapsulated to that component's view only or if they can affect other components as well.
+By default, Angular uses Emulated encapsulation, which means that component styles are scoped to the component's view and won't affect other components.</p>
