@@ -1,0 +1,27 @@
+<p>As Angular apps grow larger and more complex, managing the shared state (like user data, form inputs, filters, etc.) becomes difficult.</p>
+<p>Ngrx helps by:</p>
+<p>Making state predictable</p>
+<p>Centralizing application state</p>
+<p>Making it easier to debug and test</p>
+<hr>
+
+<p>Store	Centralized container for application state</p>
+<p>Actions	Plain objects that describe “what happened”</p>
+<p>Reducers	Pure functions that handle state transitions</p>
+<p>Selectors	Functions to read pieces of state from the store</p>
+<p>Effects	Side-effect handlers (e.g., API calls) that listen for actions and dispatch new ones</p>
+<p>State	Immutable data structure that holds app data</p>
+<hr>
+
+<p>To create an action - createAction('[Counter] Increment');</p>
+<p>To create a reducer - </p>
+<p>export const counterReducer = createReducer(
+  initialState,
+  on(increment, state => state + 1),
+  on(decrement, state => state - 1),
+  on(reset, _ => 0)
+);</p>
+<p>Import reducer in store moduele</p>
+<p>Dispatching action</p>
+<p>this.store.dispatch(increment());</p>
+<hr>

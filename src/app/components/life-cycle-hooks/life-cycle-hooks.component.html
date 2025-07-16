@@ -1,0 +1,16 @@
+<h1>ngOnChanges</h1>
+<p>It is trigerred whenever there is a change in any of the input properties of the component.</p>
+<h1>ngOnInit</h1>
+<p>It is trigerred whenever the component is initialized, and after angular sets all the input properties. Used for fetching data from APIs, and initialization logic. Just before the component is rendered on the screen.</p>
+<h1>ngDoCheck</h1>
+<p>It is trigerred whenever the change detection cycle runs. Angular performs a change detection mechanism in order to keep the data model and view in sync. Whenever angular thinks the view might need an update, Angular runs a change detection, and in each change detection the ngDoCheck is trigerred whether data is changed or not. </p>
+<h1>ngAfterContentInit</h1>
+<p>It is trigerred when the Angular projects external content using ng-content in the component's view. It runs after Angular inserts projected content from parent. It is called only if ng-content is used.</p>
+<h1>ngAfterContentChecked</h1>
+<p>It is trigerred everytime Angular checks the content projected into the component. It runs after ngAfterContentInit, and on every subsequent change detection cycle. </p>
+<h1>ngAfterViewInit</h1>
+<p>It is trigerred when the view of the component and its child views are fully initialized. It is the right place to access template elements like ViewChild and child component instances.</p>
+<h1>ngAfterViewChecked</h1>
+<p>It is trigerred after the components and its child component's view are checked by Angular's change detection system. It runs after ngAfterViewInit, and on every subsequent change detection cycle. </p>
+<h1>ngOnDestroy</h1>
+<p>It is a hook that is trigerred just before the component or directive or a service is destroyed or removed from the DOM. It is mostly used for cleanup, like unsubscribing from observables, clearing timeIntervals, etc.</p>

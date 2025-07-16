@@ -1,0 +1,33 @@
+<h3>Observables</h3>
+<p>An observable is a stream of data that can emit multiple values over time.</p>
+<h3>Cold Observable</h3>
+<p>Starts on subscribe, example: Observable, of()/p>
+<h3>Hot Observable</h3>
+<p>Already producing values, example: Subject, EventEmitter</p>
+<h3>Observer</h3>
+<p>An observers is an object with methods next, error, and complete that receives notifications from observable.</p>
+<h3>Subscription</h3>
+<p>You subscribe to an observable to receive values.</p>
+<h3>Subject</h3>
+<p>Subject is a special type of observable that allows multicasting, which means it can act as both an observable and an observer. There are 4 types of subjects.</p>
+<h4>Subjet</h4>
+<p>A basic type, which emits values to all active subscribers.</p>
+<h4>Behaviour Subject</h4>
+<p>It requires initial value, and emits latest values to new subscribers.</p>
+<h4>Replay Subject</h4>
+<p>It caches and replays a specified no. of previous values to new subscribers.</p>
+<h4>Async Subject</h4>
+<p>It emits last value to all subscribers after completion.</p>
+<h3>Operators</h3>
+<p>Operators are functions that perform operations on stream of data using pipe.</p>
+
+
+<nav>
+    <a routerLinkActive="active-link" routerLink="creation-operators">Creation Operators</a>
+    <a routerLinkActive="active-link" routerLink="transformation-operators">Transformation Operators</a>
+    <a routerLinkActive="active-link" routerLink="filtering-operators">Filtering Operators</a>
+    <a routerLinkActive="active-link" routerLink="combination-operators">Combination Operators</a>
+    <a routerLinkActive="active-link" routerLink="error-handling">Error Handling</a>
+</nav>
+
+<router-outlet></router-outlet>

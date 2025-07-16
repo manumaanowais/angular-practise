@@ -1,0 +1,3 @@
+<p>Child to parent communication can be achieved using Ouput() decorator and EvenEmitter from angular/core. Whatever data we are passing from child to parent needs to be passed in eventEmitter.emit() function, and can be accessed in parent using event binding. Parent can listen to the events from child.</p><hr>
+
+<app-child (buttonClicked)="childContacted($event)"></app-child>

@@ -1,0 +1,19 @@
+<p>In Angular, pipes are used to transform data in templates, they don't change the original content, they just transform the content that is displayed in view. Pipes can be pure and impure.</p>
+<h3>Pure Pipes</h3>
+<ul>
+    <li>Pure pipes are called only when input changes.</li>
+    <li>Pure pipes are stateless, and are highly optimized.</li>
+    <p>Example: lowercase, uppercase, titlecase, date, currency, decimal, percent, etc..</p>
+</ul>
+
+<h3>Impure Pipes</h3>
+<ul>
+    <li>Impure pipes are called on every change detection cycle, whether the input is changed or not.</li>
+    <li>Then can be statefule or have side effects.</li>
+    <p>Example: async, slice and json</p>
+</ul>
+<nav>
+    <a routerLinkActive="active-link" routerLink="built-in-pipes">Built In Pipes</a>
+    <a routerLinkActive="active-link" routerLink="custom-pipes">Custom Pipes</a>
+</nav>
+<router-outlet></router-outlet>

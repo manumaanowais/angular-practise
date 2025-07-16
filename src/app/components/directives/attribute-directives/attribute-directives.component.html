@@ -1,0 +1,12 @@
+<h1>ngClass</h1>
+
+<div [ngClass]="classes">This is div 1</div>
+
+<button type="text" (click)="addClasses()">Add some style classes</button>
+<button type="text" (click)="removeClasses()">Remove some style classes</button>
+
+<h1>ngStyle</h1>
+
+<div [ngStyle]="{'color' : isActive ? 'green' : 'red', 'background-color': isActive ? 'white' : 'yellow'}">This is div 2</div>
+
+<input type="checkbox" [(ngModel)]="isActive" />IsActive

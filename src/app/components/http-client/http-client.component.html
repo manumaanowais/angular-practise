@@ -1,0 +1,16 @@
+<table border="1" style="border-collapse: collapse">
+    <tr>
+        <th>Index</th>
+        <th>ID</th>
+        <th>User ID</th>
+        <th>Title</th>
+        <th>Completed</th>
+    </tr>
+    <tr *ngFor="let todo of todos; let i=index">
+        <th>{{i}}</th>
+        <th>{{todo.id}}</th>
+        <th>{{todo.userId}}</th>
+        <th>{{todo.title}}</th>
+        <th>{{todo.completed}}</th>
+    </tr>
+</table>

@@ -1,0 +1,55 @@
+<h1 appHighlightOnHover="green">ngIf</h1>
+
+<div *ngIf="isDivVisible">This is a div </div>
+<button type="text" (click)="hideDiv()">Hide</button>
+<button type="text" (click)="showDiv()">Show</button>
+<button type="text" (click)="toggleDiv()">Toggle</button>
+
+<h1 appHighlightOnHover="purple">ngFor</h1>
+<ul>
+    <li *ngFor="let car of cars; trackBy trackByFn">{{car}}</li>
+</ul>
+
+
+<table border="1" style="border-collapse: collapse;">
+    <tr>
+        <th>#</th>
+        <th>ID</th>
+        <th>UserID</th>
+        <th>Title</th>
+        <th>Completed</th>
+    </tr>
+    <tr *ngFor="let todo of todos; let i=index; trackBy: trackByFn">
+        <td>{{i+1}}</td>
+        <td>{{todo.id}}</td>
+        <td>{{todo.userId}}</td>
+        <td>{{todo.title}}</td>
+        <td>{{todo.completed}}</td>
+    </tr>
+</table>
+
+<h1 appHighlightOnHover="aqua">ngSwitch</h1>
+
+<select [(ngModel)]="selectedCar">
+    <option value="audi">Audi</option>
+    <option value="bmw">BMW</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="thar">Thar</option>
+    <option value="volvo">Volvo</option>
+    <option value="mustang">Mustang</option>
+    <option value="mahindra">Mahindra</option>
+    <option value="bugatti">Bugatti</option>
+    <option value="ferrari">Ferrari</option>
+</select>
+<div [ngSwitch]="selectedCar">
+    <p *ngSwitchCase="'audi'">Selected Car is Audi</p>
+    <p *ngSwitchCase="'bmw'">Selected Car is BMW</p>
+    <p *ngSwitchCase="'mercedes'">Selected Car is Mercedes</p>
+    <p *ngSwitchCase="'thar'">Selected Car is Thar</p>
+    <p *ngSwitchCase="'volvo'">Selected Car is Volvo</p>
+    <p *ngSwitchCase="'mustang'">Selected Car is Mustang</p>
+    <p *ngSwitchCase="'mahindra'">Selected Car is Mahindra</p>
+    <p *ngSwitchCase="'bugatti'">Selected Car is Bugatti</p>
+    <p *ngSwitchCase="'ferrari'">Selected Car is Ferrari</p>
+    <p *ngSwitchDefault>Select a car</p>
+</div>

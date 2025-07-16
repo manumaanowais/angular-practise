@@ -1,0 +1,11 @@
+<p>CanActivateChild is an interface that has canActivateChild method and it determines whether a child route(admin/settings) can be accessed or not, can the child route be activated or not based on logic written in canActivateChild method.</p>
+<hr>
+
+<button type="text" (click)="activateChildRoutes()">Activate Routes</button>
+<button type="text" (click)="deactivateChildRoutes()">Deactivate Routes</button><br>
+<nav>
+    <a routerLinkActive="active-link" routerLink="route3">Route3</a>
+    <a routerLinkActive="active-link" routerLink="route4">Route4</a>
+</nav>
+
+<router-outlet></router-outlet>

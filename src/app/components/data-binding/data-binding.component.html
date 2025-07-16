@@ -1,0 +1,7 @@
+<p> Hello World </p>
+<p>{{title}} from interpolation</p>
+<p [title]="title">Hello World from property binding(Hover on me, title is from property binding)</p>
+<button (click)="eventBinding()">Click on me, event performed from event binding</button><br>
+
+<input type="text" [(ngModel)]="input1" name="input1"/>{{input1}}<br>
+<input type="text" [value]="input2" /> {{input2}}

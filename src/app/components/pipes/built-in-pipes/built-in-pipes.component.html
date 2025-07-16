@@ -1,0 +1,142 @@
+<table border="1" style="border-collapse: collapse">
+    <tr>
+        <th>Input</th>
+        <th>Pipe Used</th>
+        <th>Output</th>
+    </tr>
+    <tr>
+        <td>{{originalText}}</td>
+        <td>lowercase</td>
+        <td>{{originalText | lowercase}}</td>
+    </tr>
+    <tr>
+        <td>{{originalText}}</td>
+        <td>uppercase</td>
+        <td>{{originalText | uppercase}}</td>
+    </tr>
+    <tr>
+        <td>{{originalText}}</td>
+        <td>titlecase</td>
+        <td>{{originalText | titlecase}}</td>
+    </tr>
+    <tr>
+        <td>{{originalJson}}</td>
+        <td>json</td>
+        <td>{{originalJson | json}}</td>
+    </tr>
+    <tr>
+        <td>{{originalDate}}</td>
+        <td>date</td>
+        <td>{{originalDate | date}}</td>
+    </tr>
+    <tr>
+        <td>{{originalDate}}</td>
+        <td>date(short)</td>
+        <td>{{originalDate | date:'short'}}</td>
+    </tr>
+    <tr>
+        <td>{{originalDate}}</td>
+        <td>date(medium)</td>
+        <td>{{originalDate | date:'medium'}}</td>
+    </tr>
+    <tr>
+        <td>{{originalDate}}</td>
+        <td>date(long)</td>
+        <td>{{originalDate | date:'long'}}</td>
+    </tr>
+    <tr>
+        <td>{{originalDate}}</td>
+        <td>date(shortTime)</td>
+        <td>{{originalDate | date:'shortTime'}}</td>
+    </tr>
+    <tr>
+        <td>{{originalDate}}</td>
+        <td>date(mediumTime)</td>
+        <td>{{originalDate | date:'mediumTime'}}</td>
+    </tr>
+    <tr>
+        <td>{{originalDate}}</td>
+        <td>date(fullTime)</td>
+        <td>{{originalDate | date:'fullTime'}}</td>
+    </tr>
+    <tr>
+        <td>{{originalDate}}</td>
+        <td>date(longTime)</td>
+        <td>{{originalDate | date:'longTime'}}</td>
+    </tr>
+    <tr>
+        <td>{{originalCurrency}}</td>
+        <td>currency</td>
+        <td>{{originalCurrency | currency}}</td>
+    </tr>
+    <tr>
+        <td>{{originalCurrency}}</td>
+        <td>currency(GBP)</td>
+        <td>{{originalCurrency | currency:'GBP'}}</td>
+    </tr>
+    <tr>
+        <td>{{originalCurrency}}</td>
+        <td>currency(EUR)</td>
+        <td>{{originalCurrency | currency:'EUR'}}</td>
+    </tr>
+    <tr>
+        <td>{{originalCurrency}}</td>
+        <td>currency(INR)</td>
+        <td>{{originalCurrency | currency:'INR'}}</td>
+    </tr>
+    <tr>
+        <td>{{originalCurrency}}</td>
+        <td>currency(INR, code)</td>
+        <td>{{originalCurrency | currency:'INR':'code'}}</td>
+    </tr>
+    <tr>
+        <td>{{originalPercent}}</td>
+        <td>percent</td>
+        <td>{{originalPercent | percent}}</td>
+    </tr>
+    <tr>
+        <td>{{originalNumber}}</td>
+        <td>number</td>
+        <td>{{originalNumber | number}}</td>
+    </tr>
+    <tr>
+        <td>{{originalNumber}}</td>
+        <td>number(1.5) - 1 number 5 decimals</td>
+        <td>{{originalNumber | number:'1.5'}}</td>
+    </tr>
+    <tr>
+        <td>{{originalNumber}}</td>
+        <td>number(3.5) - 3 numbers 5 decimals</td>
+        <td>{{originalNumber | number:'3.5'}}</td>
+    </tr>
+    <tr>
+        <td>{{originalNumber}}</td>
+        <td>number(3.0-5) - 3 numbers 0-5 decimals</td>
+        <td>{{originalNumber | number:'3.0-5'}}</td>
+    </tr>
+    <tr>
+        <td>{{originalText}}</td>
+        <td>slice(5)</td>
+        <td>{{originalText | slice:5}}</td>
+    </tr>
+    <tr>
+        <td>{{originalText}}</td>
+        <td>slice(1:5)</td>
+        <td>{{originalText | slice:1:5}}</td>
+    </tr>
+    <tr>
+        <td>{{originalText}}</td>
+        <td>slice(5:10)</td>
+        <td>{{originalText | slice:5:10}}</td>
+    </tr>
+    <tr>
+        <td>{{originalText}}</td>
+        <td>slice(-5)</td>
+        <td>{{originalText | slice:-5}}</td>
+    </tr>
+    <tr>
+        <td>{{newDate}}</td>
+        <td>async</td>
+        <td>{{newDate | async}}</td>
+    </tr>
+</table>

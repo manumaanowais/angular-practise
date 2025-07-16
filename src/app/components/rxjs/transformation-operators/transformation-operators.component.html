@@ -1,0 +1,9 @@
+<h4>Transformation operators</h4>
+<p>map() - performs a function or transformation of values on the values received from observable.</p>
+<p>pluck() - extract a property from each object emitted by an observable.</p>
+<p>filter() - allows you to filter out values based on some condition from an observable.</p>
+<p>scan() - it is like reduce operator but for observables instead of array. But it returns accumulated value on each emission rather than at the end.</p>
+<p>switchMap() - Using switchMap if a new observable comes in, then the previous observable is cancelled, useful for searching</p>
+<p>concatMap() - subscribes to one inner observable completes it, then works on another inner observable, it is done in sequential order. It preserves order of emissions.</p>
+<p>mergeMap() - subscribes to all inner observables concurrently, does not preserve the order of emissions.</p>
+<p>exhaustMap() - it is used to ignore subsequent emissions from the source observable, until the current inner observable is still active.</p>

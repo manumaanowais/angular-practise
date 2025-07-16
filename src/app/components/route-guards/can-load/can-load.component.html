@@ -1,0 +1,12 @@
+<p>CanLoad is an interface that has canLoad method and it is used to prevent lazy loaded modules from loading unless certain conditions are met. Unlike canActivate which runs after the module is loaded and before the route is activated, canLoad stops the module from even being loaded into the browser if some conditions fails.</p>
+<p>Note: CanLoad is deprected</p>
+<hr>
+
+<button type="text" (click)="loadRoutes()">Load Routes</button>
+<button type="text" (click)="unloadRoutes()">Unload Routes</button><br>
+<nav>
+    <a routerLinkActive="active-link" routerLink="load-route1">Route1</a>
+    <a routerLinkActive="active-link" routerLink="load-route2">Route2</a>
+</nav>
+
+<router-outlet></router-outlet>

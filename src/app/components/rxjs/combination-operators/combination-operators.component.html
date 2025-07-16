@@ -1,0 +1,7 @@
+<h4>Combination</h4>
+<p>combineLatest() - it emits the latest values from multiple obseravables whenever any of them emits a new value after all have emitted atleast once.</p>
+<p>merge() - is used to combine multiple observables into one observable by merging their emissions as they occur - concurrently and without waiting.</p>
+<p>concat() - is used to sequentially combine multiple observables. It emits values from one observable waits for it to complete, then executes to next observable.</p>
+<p>withLatestFrom() - it combines the latest values from other observables only when the source observable emits.</p>
+<p>forkJoin() - is used to execute multple observables in parallel, and emits the last value from each once after all completes.</p>
+<p>zip() - it combines values from multiple observables in lockstep, i.e, it waits for one value from each then emits them as a group.</p>

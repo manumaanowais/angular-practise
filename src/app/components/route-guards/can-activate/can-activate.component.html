@@ -1,0 +1,11 @@
+<p>CanActivate is an interface that has canActivate method and it determines whether a route can be accessed or not, can the route be activated or not based on logic written in canActivate method. It is useful for authentication</p>
+<hr>
+
+<button type="text" (click)="activateRoutes()">Activate Routes</button>
+<button type="text" (click)="deactivateRoutes()">Deactivate Routes</button><br>
+<nav>
+    <a routerLinkActive="active-link" routerLink="route1">Route1</a>
+    <a routerLinkActive="active-link" routerLink="route2">Route2</a>
+</nav>
+
+<router-outlet></router-outlet>
